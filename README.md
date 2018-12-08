@@ -1,2 +1,0 @@
-# ReactCommentViaFaker
-Created with CodeSandbox
