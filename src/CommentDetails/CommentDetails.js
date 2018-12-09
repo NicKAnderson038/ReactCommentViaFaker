@@ -1,8 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import faker from "faker";
 
-const CommentDetail = () => {
+const CommentDetail = props => {
   return (
     <div className="ui container comments">
       <div className="comment">
@@ -14,9 +13,9 @@ const CommentDetail = () => {
             {faker.name.findName()}
           </a>
           <div className="metadata">
-            <span className="date">{faker.date.future}</span>
+            <span className="date">{props.date}</span>
           </div>
-          <div className="text">Nice Blog Post...</div>
+          <div className="text">{props.text}</div>
         </div>
       </div>
     </div>
